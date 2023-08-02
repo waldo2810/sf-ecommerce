@@ -1,17 +1,23 @@
 import { Product } from "@/types";
 import qs from "query-string";
 
-const URL = `${process.env.NEXT_PUBLIC_API_URL}/data`;
+const endpoint = `${process.env.NEXT_PUBLIC_API_URL}/data`;
 
 interface Query {
-  categoryId?: string;
-  colorId?: string;
-  sizeId?: string;
-  isFeatured?: boolean;
+  sort?: string;
+  order?: string;
 }
 
-const getProducts = async (): Promise<Product[]> => {
-  const res = await fetch(URL);
+const getProducts = async (query: Query): Promise<Product[]> => {
+  const url = qs.stringifyUrl({
+    url: endpoint,
+    query: {
+      _sort: query.sort || undefined,
+      _order: query.order || undefined,
+    },
+  });
+
+  const res = await fetch(url);
 
   return res.json();
 };

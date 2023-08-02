@@ -18,7 +18,7 @@ interface ProductPageProps {
 
 const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
   const product = await getProduct(params.productId);
-  const allProducts = await getProducts();
+  const allProducts = await getProducts({});
 
   if (!product) {
     return null;

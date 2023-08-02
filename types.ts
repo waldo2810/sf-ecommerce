@@ -8,6 +8,10 @@ export interface Product {
   rating: number;
 }
 
+export interface ProductResponse {
+  products: Product[];
+}
+
 export type SortFilterItem = {
   title: string;
   slug: string | null;
