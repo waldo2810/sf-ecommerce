@@ -1,14 +1,15 @@
 "use client";
 
-import Image from "next/image";
-import { MouseEventHandler } from "react";
 import { Expand, ShoppingCart } from "lucide-react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { MouseEventHandler } from "react";
 
 import Currency from "@/components/ui/currency";
 import IconButton from "@/components/ui/icon-button";
-import usePreviewModal from "@/hooks/use-preview-modal";
 import useCart from "@/hooks/use-cart";
+import { onOpen } from "@/redux/features/modalSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { Product } from "@/types";
 
 interface ProductCard {
@@ -16,9 +17,10 @@ interface ProductCard {
 }
 
 const ProductCard: React.FC<ProductCard> = ({ data }) => {
-  const previewModal = usePreviewModal();
   const cart = useCart();
   const router = useRouter();
+  const dispatch = useAppDispatch();
+  const isOpen = useAppSelector((state) => state.modalReducer.isOpen);
 
   const handleClick = () => {
     router.push(`/product/${data?.id}`);
@@ -27,7 +29,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
   const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.stopPropagation();
 
-    previewModal.onOpen(data);
+    dispatch(onOpen(data));
   };
 
   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {

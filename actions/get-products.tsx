@@ -9,9 +9,6 @@ interface Query {
 }
 
 const getProducts = async (query: Query): Promise<Product[]> => {
-  console.log("sort", query.sort);
-  console.log("order", query.order);
-
   const url = qs.stringifyUrl({
     url: endpoint,
     query: {
