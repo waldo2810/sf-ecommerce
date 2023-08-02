@@ -12,9 +12,13 @@ export interface ProductResponse {
   products: Product[];
 }
 
-export type SortFilterItem = {
-  title: string;
-  slug: string | null;
-  sortKey: "RELEVANCE" | "PRICE";
-  reverse: boolean;
-};
+export interface SortItemValue {
+  sort: string;
+  order: string;
+}
+
+export interface SortFilterItem {
+  id: number;
+  name: string;
+  value: SortItemValue;
+}

@@ -43,7 +43,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
     >
       {/* Image & actions */}
       <div className="aspect-square rounded-xl bg-gray-100 relative">
-        <Image src={data.image} alt={data.title} fill loading="lazy" />
+        <Image src={data.image} alt={data.title} fill priority />
         <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
           <div className="flex gap-x-6 justify-center">
             <IconButton

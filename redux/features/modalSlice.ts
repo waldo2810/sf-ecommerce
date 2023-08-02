@@ -23,18 +23,6 @@ export const modal = createSlice({
       state.isOpen = false;
       state.data = undefined;
     },
-    // increment: (state) => {
-    //   state.value += 1;
-    // },
-    // decrement: (state) => {
-    //   state.value -= 1;
-    // },
-    // incrementByAmount: (state, action: PayloadAction<number>) => {
-    //   state.value += action.payload;
-    // },
-    // decrementByAmount: (state, action: PayloadAction<number>) => {
-    //   state.value -= action.payload;
-    // },
   },
 });
 

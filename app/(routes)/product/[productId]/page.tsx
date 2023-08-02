@@ -35,7 +35,7 @@ const ProductPage: React.FC<ProductPageProps> = async ({ params }) => {
                 alt={product.title}
                 width={500}
                 height={500}
-                loading="lazy"
+                priority
               />
             </Suspense>
             <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
