@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Premium Wireless Earbuds",
+      "description": "Experience high-quality sound and convenience with these premium wireless earbuds. Perfect for music enthusiasts on the go.",
+      "price": 99.99,
+      "currency": "USD",
+      "image": "https://example.com/earbuds.jpg",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "title": "Smartphone Gimbal Stabilizer",
+      "description": "Capture smooth and professional-looking videos with this smartphone gimbal stabilizer. The perfect tool for content creators.",
+      "price": 149.99,
+      "currency": "USD",
+      "image": "https://example.com/gimbal.jpg",
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "title": "Portable Bluetooth Speaker",
+      "description": "Take your music anywhere with this portable Bluetooth speaker. It delivers impressive sound and long battery life.",
+      "price": 79.99,
+      "currency": "USD",
+      "image": "https://example.com/speaker.jpg",
+      "rating": 4.0
+    },
+    {
+      "id": 4,
+      "title": "Wireless Gaming Mouse",
+      "description": "Dominate the competition with this responsive and ergonomic wireless gaming mouse. Designed for long gaming sessions.",
+      "price": 49.99,
+      "currency": "USD",
+      "image": "https://example.com/gaming-mouse.jpg",
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "title": "Smart Home Security Camera",
+      "description": "Keep your home safe with this smart security camera. Features include night vision, motion detection, and two-way audio.",
+      "price": 129.99,
+      "currency": "USD",
+      "image": "https://example.com/security-camera.jpg",
+      "rating": 4.9
+    },
+    {
+      "id": 6,
+      "title": "Stainless Steel Toaster",
+      "description": "Upgrade your breakfast routine with this stylish stainless steel toaster. Enjoy perfectly toasted bread every time.",
+      "price": 39.99,
+      "currency": "USD",
+      "image": "https://example.com/toaster.jpg",
+      "rating": 4.3
+    },
+    {
+      "id": 7,
+      "title": "Fitness Tracker Watch",
+      "description": "Monitor your health and fitness goals with this feature-packed fitness tracker watch. Track steps, heart rate, and more.",
+      "price": 89.99,
+      "currency": "USD",
+      "image": "https://example.com/fitness-tracker.jpg",
+      "rating": 3.5
+    },
+    {
+      "id": 8,
+      "title": "Electric Standing Desk",
+      "description": "Stay productive and healthy with this electric standing desk. Easily switch between sitting and standing positions.",
+      "price": 199.99,
+      "currency": "USD",
+      "image": "https://example.com/standing-desk.jpg",
+      "rating": 4.6
+    },
+    {
+      "id": 9,
+      "title": "Professional Chef Knife",
+      "description": "Unleash your inner chef with this high-quality professional chef knife. Perfect for slicing, dicing, and chopping.",
+      "price": 119.99,
+      "currency": "USD",
+      "image": "https://example.com/chef-knife.jpg",
+      "rating": 4.3
+    },
+    {
+      "id": 10,
+      "title": "Wireless In-Ear Headphones",
+      "description": "Enjoy tangle-free music with these comfortable wireless in-ear headphones. Ideal for workouts and everyday use.",
+      "price": 69.99,
+      "currency": "USD",
+      "image": "https://example.com/in-ear-headphones.jpg",
+      "rating": 3.9
+    }
+  ]
+}
