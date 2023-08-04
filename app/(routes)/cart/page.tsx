@@ -10,6 +10,11 @@ import CartItem from './components/cart-item';
 
 export const revalidate = 0;
 
+export const metadata = {
+  title: "Cart",
+  description: "Cart to find your items. Almost ready to go.",
+};
+
 const CartPage = () => {
   const [isMounted, setIsMounted] = useState(false);
   const cart = useCart();

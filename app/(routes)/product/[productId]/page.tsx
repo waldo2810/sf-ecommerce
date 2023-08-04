@@ -10,6 +10,11 @@ import Loading from "./loading";
 
 export const revalidate = 0;
 
+export const metadata = {
+  title: "Product details",
+  description: "See the details of an amazing product.",
+};
+
 interface ProductPageProps {
   params: {
     productId: string;
